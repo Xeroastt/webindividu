@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>Honkai Star Rail</title>
+  <link rel="icon" type="image/webp" href="image/logo atas.webp">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header class="header" id="navigation-menu">
+    <div class="container">
+      <nav>
+        <a href="#" class="logo"> <img src="image/logo.png" alt=""> </a>
+
+        <ul class="nav-menu">
+          <li> <a href="#home" class="nav-link">Home</a> </li>
+          <li> <a href="#card" class="nav-link">Characters</a> </li>
+          <li> <a href="#path" class="nav-link">Path</a> </li>
+          <li> <a href="https://xeroastt.github.io/portopolio/" target="_blank" class="nav-link">About</a> </li>
+        </ul>
+
+
+        <div class="hambuger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const hambuger = document.querySelector('.hambuger');
+    const navMenu = document.querySelector('.nav-menu');
+
+    hambuger.addEventListener("click", mobileMenu);
+
+    function mobileMenu() {
+      hambuger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    }
+
+    const navLink = document.querySelectorAll('.nav-link');
+    navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+    function closeMenu() {
+      hambuger.classList.remove("active");
+      navMenu.classList.remove("active");
+    }
+  </script>
+
+  <section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="video">
+          <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+            <source src="image/video background.mp4" type="video/mp4">
+            </video>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+<section id="card">
+  <img src="image/background.jpg" class="bg">
+  <h1 class="judul">New Character</h1>
+  <a href="#card" alt="">
+    <div class="card">
+      <div class="wrapper">
+        <img src="image/jing liu/cover.jpg" class="cover-image" />
+      </div>
+      <img src="image/jing liu/title.png" class="title" />
+      <img src="image/jing liu/character.webp" class="character" />
+    </div>
+  </a>
+  <a href="#card" alt="" >
+    <div class="card">
+      <div class="wrapper">
+        <img src="image/blade/cover.jpg" class="cover-image" />
+      </div>
+      <img src="image/blade/title.png" class="title" />
+      <img src="image/blade/character.png" class="character" />
+    </div>
+  </a>
+  <a href="#card" alt="" >
+    <div class="card">
+      <div class="wrapper">
+        <img src="image/topaz/cover.png" class="cover-image" />
+      </div>
+      <img src="image/topaz/title.png" class="title" />
+      <img src="image/topaz/character.jpg" class="character" />
+    </div>
+  </a>
+  <a href="#card" alt="">
+    <div class="card">
+      <div class="wrapper">
+        <img src="image/huo/huohuo-character_cut_in_front.png" class="cover-image" />
+      </div>
+      <h2 class="title"> HuoHuo </h2>
+      <img src="image/huo/Character.webp" class="character" />
+    </div>
+  </a>
+
+</section>
+<section id="path">
+  <h1 class="judul">Path</h1>
+  <div class="wrapper-path">
+    <a href="hunt.html">
+    <div class="card-path">
+      <div class="poster"><img src="image/path/Path_The_Hunt.webp" alt=""></div>
+      <div class="details">
+        <h1>The Hunt</h1>
+        
+        <p class="desc">
+          Deals extraordinary amounts of single-target damage. The main damage dealer against Elite Enemies
+        </p>
+        <div class="cast">
+          <h3>Characters</h3>
+          <ul>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/dr-ratio-character_icon.webp?x92926" alt="Dr.Ratio" title="Dr.Ratio"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/topaz-numby-character_icon.webp?x92926" alt="Topaz" title="Topaz"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/seele-character_icon.webp?x92926" alt="Seele" title="Seele"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="destruction.html">
+    <div class="card-path">
+      <div class="poster"><img src="image/path/Path_Destruction.webp" alt=""></div>
+      <div class="details">
+        <h1>Destruction</h1>
+        
+        <p class="desc">
+          Deals outstanding amounts of damage and possesses great survivability. Suitable for various combat scenarios
+                </p>
+        <div class="cast">
+          <h3>Characters</h3>
+          <ul>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/blade-character_icon.webp?x92926" alt="Blade" title="Blade"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/jingliu-character_icon.webp?x48717" alt="Jing Liu" title="Jing Liu"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/dan-heng-imbibitor-lunae-character_icon.webp?x92926" alt="Dan Heng IL" title="Dan Heng IL"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="erudition.html">
+    <div class="card-path">
+      <div class="poster"><img src="image/path/Path_Erudition.webp" alt=""></div>
+      <div class="details">
+        <h1>Erudition</h1>
+        
+        <p class="desc">
+          Deals remarkable amounts of multi-target damage. The main damage dealer against groups of enemies
+        </p>
+        <div class="cast">
+          <h3>Characters</h3>
+          <ul>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/himeko-character_icon.webp?x92926" alt="Himeko" title="Himeko"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/jing-yuan-character_icon.webp?x92926" alt="Jing Yuean" title="Jing Yuan"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/argenti-character_icon.webp?x92926" alt="Argenti" title="Argenti"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="harmony.html" >
+    <div class="card-path">
+      <div class="poster"><img src="image/path/Path_Harmony.webp" alt=""></div>
+      <div class="details">
+        <h1>Harmony</h1>
+        
+        <p class="desc">
+          Applies buffs to allies to improve the team's combat capacities        </p>
+        <div class="cast">
+          <h3>Characters</h3>
+          <ul>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/bronya-character_icon.webp?x92926" alt="Bronya" title="Bronya"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/ruan-mei-character_icon.webp?x92926" alt="Ruan Mei" title="Ruan Mei"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/tingyun-character_icon.webp?x92926" alt="Tingyun" title="Tingyun"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="nihility.html">
+    <div class="card-path">
+      <div class="poster"><img src="image/path/Path_Nihility.webp" alt=""></div>
+      <div class="details">
+        <h1>Nihility</h1>
+        
+        <p class="desc">
+          Applies debuffs to enemies to reduce their combat capacities        </p>
+        <div class="cast">
+          <h3>Characters</h3>
+          <ul>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/kafka-character_icon.webp?x92926" alt="Kafka" title="Kafka"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/silver-wolf-character_icon.webp?x92926" alt="Silver Wolf" title="Silver Wolf"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/guinaifen-character_icon.webp?x92926" alt="Guinaifen" title="Guinaifen"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="preservation.html">
+    <div class="card-path">
+      <div class="poster"><img src="image/path/Path_Preservation.webp" alt=""></div>
+      <div class="details">
+        <h1>Preservation</h1>
+        
+        <p class="desc">
+          Possesses powerful defensive abilities to protect allies in various ways        </p>
+        <div class="cast">
+          <h3>Characters</h3>
+          <ul>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/fu-xuan-character_icon.webp?x92926" alt="Fu Xuan" title="Fu Xuan"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/gepard-character_icon.webp?x92926" alt="Gepard" title="Gepard"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/trailblazer-character-4_icon.webp?x92926" alt="Trailblazer" title="Trailblazer"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </a>
+  <a href="abundance.html">
+    <div class="card-path">
+      <div class="poster"><img src="image/path/Path_Abundance.webp" alt=""></div>
+      <div class="details">
+        <h1>Abundance</h1>
+        
+        <p class="desc">
+          Heals allies and restores HP to the team
+        </p>
+        <div class="cast">
+          <h3>Characters</h3>
+          <ul>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/huohuo-character_icon.webp?x92926" alt="HuoHuo" title="HuoHuo"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/bailu-character_icon.webp?x92926" alt="Bailu" title="Bailu"></li>
+            <li><img src="https://hsr.honeyhunterworld.com/img/character/luocha-character_icon.webp?x92926" alt="Luocha" title="Luocha"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  </div>
+  </section>
+<footer class="section-p1">
+  <div class="col">
+      <img class="logo" src="image/logo.png" alt="">
+      <h4>Contact Support</h4>
+      <p><strong>Email:</strong> hsrcs_id@hoyoverse.com </p>
+      <p><strong>Phone:</strong> 0812-8027-5725</p>
+      <div class="follow">
+          <h4>follow us</h4>
+          <div class="icon">
+              <a href="https://www.instagram.com/honkaistarrail/"><i class="fab fa-instagram"></i>  instagram</a>
+              <a href="https://web.facebook.com/HonkaiStarRail/?_rdc=1&_rdr"><i class="fab fa-facebook"></i>facebook</a>
+          </div>
+      </div>
+  </div>
+
+  <div class="col">
+      <h4>about</h4>
+      <a href="https://www.hoyoverse.com/en-us/about-us?utm_source=hsr&utm_medium=footer" target="_blank">About Us</a>
+      <a href="https://hsr.hoyoverse.com/en-us/company/privacy" target="_blank">Privacy Policy</a>
+      <a href="https://hsr.hoyoverse.com/en-us/company/terms" target="_blank">Terms & Conditions</a>
+      <a href="mailto:hsrcs_en@hoyoverse.com" class="link-1VLT0O decorate-SiS6EF" target="_blank" rel="noopener noreferrer">Contact Us</a>  </div>
+
+  <div class="col install">
+      <h4>Install App</h4>
+      <p>From App Store or Google Play</p>
+      <div class="row">
+          <a href="https://apps.apple.com/us/app/honkai-star-rail/id1599719154" target="_blank"><img src="image/app.jpg" alt=""></a>
+          <a href="https://play.google.com/store/apps/details?id=com.HoYoverse.hkrpgoversea&referrer=adjust_reftag%3Dc6M8DZ0QwybYx%26utm_source%3DOPT_HYV%2Bofficial%2Bsite%26utm_campaign%3DHYV%26utm_content%3DOPT_CB3_OFFICIAL_GP" target="_blank">
+          <img src="image/play.jpg" alt=""></a>
+
+      </div>
+  </div>
+
+  <div class="copyright">
+      <p>@ 2023, Desain Media Interaktif - XII Multimedia</p>
+  </div>
+</footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 10,
+      nav: true,
+      dots: false,
+      navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+</body>
+
+</html>
